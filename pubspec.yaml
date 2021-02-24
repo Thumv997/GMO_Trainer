@@ -45,6 +45,15 @@ flutter:
   uses-material-design: true
   assets:
      - assets/images/
+  fonts:
+    - family: Roboto
+      fonts:
+        - asset: fonts/Roboto-Regular.ttf
+        - asset: fonts/Roboto-Bold.ttf
+    - family: RobotoCondensed
+      fonts:
+        - asset: fonts/RobotoCondensed-Regular.ttf
+        - asset: fonts/RobotoCondensed-Bold.ttf   
   # To add assets to your application, add an assets section, like this:
   # assets:
   #   - images/a_dot_burr.jpeg
@@ -71,7 +80,9 @@ flutter:
   #     fonts:
   #       - asset: fonts/TrajanPro.ttf
   #       - asset: fonts/TrajanPro_Bold.ttf
-  #         weight: 700
-  #
+  # 
+  
+      
+        
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
