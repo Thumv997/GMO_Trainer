@@ -1,4 +1,10 @@
 Ảnh mẫu
-![New-MetaTrader-5-iOS-build-1509-Login-to-MQL5 com-with-Facebook-MetaQuotes-Software-Corp -iphone-ipad](https://user-images.githubusercontent.com/71718554/109242617-01ccb400-780e-11eb-8bf0-5d58cf5075b6.png)
-Ảnh Custom
-![Screenshot_1614304297](https://user-images.githubusercontent.com/71718554/109243672-ee224d00-780f-11eb-9ffa-92670cd2f66e.png)
+![New-MetaTrader-5-iOS-build-1509-Login-to-MQL5 com-with-Facebook-MetaQuotes-Software-Corp -iphone-ipad](https://user-images.githubusercontent.com/71718554/109247094-e5347a00-7815-11eb-9886-1dcd9db5f89a.png)
+
+Ảnh màn 1
+![Capture2](https://user-images.githubusercontent.com/71718554/109246929-ab637380-7815-11eb-8165-e4eda74f87a5.PNG)
+
+Ảnh màn 2
+![Capture](https://user-images.githubusercontent.com/71718554/109246956-b3231800-7815-11eb-8b87-26126ca213c0.PNG)
+
+
