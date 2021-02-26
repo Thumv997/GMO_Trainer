@@ -20,7 +20,7 @@ class _ScreenRegistrationState extends State<ScreenRegistration> {
                   fit: BoxFit.cover),
             ),
           ),
-
+          // ....
           SafeArea(
             child: Padding(
               padding: EdgeInsets.symmetric(horizontal: 10),
@@ -30,7 +30,15 @@ class _ScreenRegistrationState extends State<ScreenRegistration> {
                     _buildAppBar(),
                     _buildTitle(),
                     _buildTextField(),
-                    _buildInfor(),
+                    Text(
+                      "The password for your new MQL5\n"
+                      'acount will be sent to the special email\n'
+                      'adress',
+                      textAlign: TextAlign.center,
+                      style: labelStyle.copyWith(
+                        color: kTextColor,
+                      ),
+                    ),
                     _buildRegisterButton(),
                     Text(
                       'or',
@@ -40,34 +48,6 @@ class _ScreenRegistrationState extends State<ScreenRegistration> {
                   ],
                 ),
               ),
-            ),
-          ),
-        ],
-      ),
-    );
-  }
-
-  _buildInfor() {
-    return RichText(
-      textAlign: TextAlign.center,
-      text: TextSpan(
-        children: <TextSpan>[
-          TextSpan(
-            text: "The password for your new MQL5\n",
-            style: labelStyle.copyWith(
-              color: kTextColor,
-            ),
-          ),
-          TextSpan(
-            text: 'acount will be sent to the special email\n',
-            style: labelStyle.copyWith(
-              color: kTextColor,
-            ),
-          ),
-          TextSpan(
-            text: 'adress',
-            style: labelStyle.copyWith(
-              color: kTextColor,
             ),
           ),
         ],
@@ -129,20 +109,10 @@ class _ScreenRegistrationState extends State<ScreenRegistration> {
             ),
           ),
           SizedBox(height: 5),
-          RichText(
+          Text(
+            "Join Traders Community\nwww.mql5.com",
+            style: headingStyle,
             textAlign: TextAlign.center,
-            text: TextSpan(
-              children: <TextSpan>[
-                TextSpan(
-                  text: "Join Traders Community\n",
-                  style: headingStyle,
-                ),
-                TextSpan(
-                  text: "www.mql5.com",
-                  style: headingStyle,
-                ),
-              ],
-            ),
           ),
         ],
       ),
@@ -237,8 +207,8 @@ class _ScreenRegistrationState extends State<ScreenRegistration> {
             padding: const EdgeInsets.only(right: 10),
             child: Image(
               image: AssetImage('assets/images/icon_fb.png'),
-              height: 24,
-              width: 24,
+              height: 20,
+              width: 20,
             ),
           ),
           Text(
