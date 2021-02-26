@@ -1,7 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_2/components/custom_appbar.dart';
-import 'package:flutter_application_2/components/custom_textfield.dart';
-import 'package:flutter_application_2/contains.dart';
 import 'package:flutter_application_2/sc_registration.dart';
 
 void main() {

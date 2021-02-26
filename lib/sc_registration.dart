@@ -22,6 +22,7 @@ class _ScreenRegistrationState extends State<ScreenRegistration> {
           ),
 
           Container(
+            padding: EdgeInsets.symmetric(horizontal: 15),
             child: SingleChildScrollView(
               child: Column(
                 children: [
@@ -135,7 +136,7 @@ class _ScreenRegistrationState extends State<ScreenRegistration> {
 
   _buildTextField() {
     return Container(
-      margin: EdgeInsets.fromLTRB(30, 30, 30, 15),
+      margin: EdgeInsets.fromLTRB(40, 30, 40, 15),
       padding: EdgeInsets.symmetric(horizontal: 15),
       decoration: BoxDecoration(
         color: kTextColor,
@@ -191,7 +192,7 @@ class _ScreenRegistrationState extends State<ScreenRegistration> {
 
   _buildRegisterButton() {
     return Container(
-      margin: EdgeInsets.symmetric(horizontal: 30, vertical: 10),
+      margin: EdgeInsets.symmetric(horizontal: 40, vertical: 10),
       alignment: Alignment.center,
       width: double.infinity,
       padding: EdgeInsets.symmetric(vertical: 10),
@@ -208,7 +209,7 @@ class _ScreenRegistrationState extends State<ScreenRegistration> {
 
   _buildFbButton() {
     return Container(
-      margin: EdgeInsets.symmetric(vertical: 10, horizontal: 30),
+      margin: EdgeInsets.symmetric(vertical: 10, horizontal: 40),
       padding: EdgeInsets.symmetric(vertical: 10),
       decoration: BoxDecoration(
         color: Colors.white,
