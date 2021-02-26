@@ -21,45 +21,47 @@ class _ScreenRegistrationState extends State<ScreenRegistration> {
             ),
           ),
 
-          Container(
-            padding: EdgeInsets.symmetric(horizontal: 15),
-            child: SingleChildScrollView(
-              child: Column(
-                children: [
-                  _buildAppBar(),
-                  _buildTitle(),
-                  _buildTextField(),
+          SafeArea(
+            child: Padding(
+              padding: EdgeInsets.symmetric(horizontal: 10),
+              child: SingleChildScrollView(
+                child: Column(
+                  children: [
+                    _buildAppBar(),
+                    _buildTitle(),
+                    _buildTextField(),
 
-                  //infor
-                  Column(
-                    children: [
-                      Text(
-                        "The password for your new MQL5",
-                        style: labelStyle.copyWith(
-                          color: kTextColor,
+                    //infor
+                    Column(
+                      children: [
+                        Text(
+                          "The password for your new MQL5",
+                          style: labelStyle.copyWith(
+                            color: kTextColor,
+                          ),
                         ),
-                      ),
-                      Text(
-                        'acount will be sent to the special email',
-                        style: labelStyle.copyWith(
-                          color: kTextColor,
+                        Text(
+                          'acount will be sent to the special email',
+                          style: labelStyle.copyWith(
+                            color: kTextColor,
+                          ),
                         ),
-                      ),
-                      Text(
-                        'adress',
-                        style: labelStyle.copyWith(
-                          color: kTextColor,
+                        Text(
+                          'adress',
+                          style: labelStyle.copyWith(
+                            color: kTextColor,
+                          ),
                         ),
-                      ),
-                    ],
-                  ),
-                  _buildRegisterButton(),
-                  Text(
-                    'or',
-                    style: labelStyle.copyWith(color: kTextColor),
-                  ),
-                  _buildFbButton(),
-                ],
+                      ],
+                    ),
+                    _buildRegisterButton(),
+                    Text(
+                      'or',
+                      style: labelStyle.copyWith(color: kTextColor),
+                    ),
+                    _buildFbButton(),
+                  ],
+                ),
               ),
             ),
           ),
@@ -70,7 +72,7 @@ class _ScreenRegistrationState extends State<ScreenRegistration> {
 
   _buildAppBar() {
     return Padding(
-      padding: const EdgeInsets.only(left: 5, top: 25),
+      padding: const EdgeInsets.only(left: 5, top: 10),
       child: Row(
         children: [
           Expanded(
@@ -99,7 +101,7 @@ class _ScreenRegistrationState extends State<ScreenRegistration> {
 
   _buildTitle() {
     return Padding(
-      padding: const EdgeInsets.only(top: 50),
+      padding: const EdgeInsets.only(top: 40),
       child: Column(
         children: [
           RichText(
@@ -136,7 +138,7 @@ class _ScreenRegistrationState extends State<ScreenRegistration> {
 
   _buildTextField() {
     return Container(
-      margin: EdgeInsets.fromLTRB(40, 30, 40, 15),
+      margin: EdgeInsets.fromLTRB(30, 30, 30, 15),
       padding: EdgeInsets.symmetric(horizontal: 15),
       decoration: BoxDecoration(
         color: kTextColor,
@@ -192,7 +194,7 @@ class _ScreenRegistrationState extends State<ScreenRegistration> {
 
   _buildRegisterButton() {
     return Container(
-      margin: EdgeInsets.symmetric(horizontal: 40, vertical: 10),
+      margin: EdgeInsets.symmetric(horizontal: 30, vertical: 10),
       alignment: Alignment.center,
       width: double.infinity,
       padding: EdgeInsets.symmetric(vertical: 10),
@@ -202,14 +204,14 @@ class _ScreenRegistrationState extends State<ScreenRegistration> {
       ),
       child: Text(
         "Register",
-        style: TextStyle(fontSize: 20),
+        style: TextStyle(fontSize: 16),
       ),
     );
   }
 
   _buildFbButton() {
     return Container(
-      margin: EdgeInsets.symmetric(vertical: 10, horizontal: 40),
+      margin: EdgeInsets.symmetric(vertical: 10, horizontal: 30),
       padding: EdgeInsets.symmetric(vertical: 10),
       decoration: BoxDecoration(
         color: Colors.white,
@@ -228,7 +230,7 @@ class _ScreenRegistrationState extends State<ScreenRegistration> {
           ),
           Text(
             "Continue with Facebook",
-            style: labelStyle.copyWith(color: kTextFacebookColor),
+            style: labelStyle.copyWith(color: kTextFacebookColor, fontSize: 16),
           ),
         ],
       ),
