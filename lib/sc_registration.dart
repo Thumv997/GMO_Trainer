@@ -30,30 +30,7 @@ class _ScreenRegistrationState extends State<ScreenRegistration> {
                     _buildAppBar(),
                     _buildTitle(),
                     _buildTextField(),
-
-                    //infor
-                    Column(
-                      children: [
-                        Text(
-                          "The password for your new MQL5",
-                          style: labelStyle.copyWith(
-                            color: kTextColor,
-                          ),
-                        ),
-                        Text(
-                          'acount will be sent to the special email',
-                          style: labelStyle.copyWith(
-                            color: kTextColor,
-                          ),
-                        ),
-                        Text(
-                          'adress',
-                          style: labelStyle.copyWith(
-                            color: kTextColor,
-                          ),
-                        ),
-                      ],
-                    ),
+                    _buildInfor(),
                     _buildRegisterButton(),
                     Text(
                       'or',
@@ -63,6 +40,34 @@ class _ScreenRegistrationState extends State<ScreenRegistration> {
                   ],
                 ),
               ),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+
+  _buildInfor() {
+    return RichText(
+      textAlign: TextAlign.center,
+      text: TextSpan(
+        children: <TextSpan>[
+          TextSpan(
+            text: "The password for your new MQL5\n",
+            style: labelStyle.copyWith(
+              color: kTextColor,
+            ),
+          ),
+          TextSpan(
+            text: 'acount will be sent to the special email\n',
+            style: labelStyle.copyWith(
+              color: kTextColor,
+            ),
+          ),
+          TextSpan(
+            text: 'adress',
+            style: labelStyle.copyWith(
+              color: kTextColor,
             ),
           ),
         ],
@@ -105,6 +110,7 @@ class _ScreenRegistrationState extends State<ScreenRegistration> {
       child: Column(
         children: [
           RichText(
+            textAlign: TextAlign.center,
             text: TextSpan(
               children: <TextSpan>[
                 TextSpan(
@@ -123,13 +129,20 @@ class _ScreenRegistrationState extends State<ScreenRegistration> {
             ),
           ),
           SizedBox(height: 5),
-          Text(
-            "Join Traders Community",
-            style: headingStyle,
-          ),
-          Text(
-            "www.mql5.com",
-            style: headingStyle,
+          RichText(
+            textAlign: TextAlign.center,
+            text: TextSpan(
+              children: <TextSpan>[
+                TextSpan(
+                  text: "Join Traders Community\n",
+                  style: headingStyle,
+                ),
+                TextSpan(
+                  text: "www.mql5.com",
+                  style: headingStyle,
+                ),
+              ],
+            ),
           ),
         ],
       ),
