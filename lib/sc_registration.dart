@@ -48,7 +48,6 @@ class _ScreenRegistrationState extends State<ScreenRegistration> {
               ),
             ),
           ),
-          // ....
         ],
       ),
     );
