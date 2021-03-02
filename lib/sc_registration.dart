@@ -14,39 +14,40 @@ class _ScreenRegistrationState extends State<ScreenRegistration> {
         children: [
           // Background Images
           Container(
-            height: double.infinity,
             padding: EdgeInsets.symmetric(horizontal: 10),
+            height: double.infinity,
             decoration: BoxDecoration(
               image: DecorationImage(
                   image: AssetImage('assets/images/background.png'),
                   fit: BoxFit.cover),
             ),
-            child: SingleChildScrollView(
-              child: Column(
-                children: [
-                  _buildAppBar(),
-                  _buildTitle(),
-                  _buildTextField(),
-                  Text(
-                    "The password for your new MQL5\n"
-                    'acount will be sent to the special email\n'
-                    'adress',
-                    textAlign: TextAlign.center,
-                    style: labelStyle.copyWith(
-                      color: kTextColor,
+            child: SafeArea(
+              child: SingleChildScrollView(
+                child: Column(
+                  children: [
+                    _buildAppBar(),
+                    _buildTitle(),
+                    _buildTextField(),
+                    Text(
+                      "The password for your new MQL5\n"
+                      'acount will be sent to the special email\n'
+                      'adress',
+                      textAlign: TextAlign.center,
+                      style: labelStyle.copyWith(
+                        color: kTextColor,
+                      ),
                     ),
-                  ),
-                  _buildRegisterButton(),
-                  Text(
-                    'or',
-                    style: labelStyle.copyWith(color: kTextColor),
-                  ),
-                  _buildFbButton(),
-                ],
+                    _buildRegisterButton(),
+                    Text(
+                      'or',
+                      style: labelStyle.copyWith(color: kTextColor),
+                    ),
+                    _buildFbButton(),
+                  ],
+                ),
               ),
             ),
           ),
-          // ....
         ],
       ),
     );
