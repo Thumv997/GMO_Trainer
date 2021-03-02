@@ -14,16 +14,14 @@ class _ScreenRegistrationState extends State<ScreenRegistration> {
         children: [
           // Background Images
           Container(
+            height: double.infinity,
+            padding: EdgeInsets.symmetric(horizontal: 10),
             decoration: BoxDecoration(
               image: DecorationImage(
                   image: AssetImage('assets/images/background.png'),
                   fit: BoxFit.cover),
             ),
-          ),
-          // ....
-          SafeArea(
-            child: Padding(
-              padding: EdgeInsets.symmetric(horizontal: 10),
+            child: SafeArea(
               child: SingleChildScrollView(
                 child: Column(
                   children: [
@@ -50,6 +48,7 @@ class _ScreenRegistrationState extends State<ScreenRegistration> {
               ),
             ),
           ),
+          // ....
         ],
       ),
     );
